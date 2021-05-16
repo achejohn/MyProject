@@ -1,0 +1,230 @@
+*{
+    font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+.links ul{
+    padding-top: 10px;
+    list-style-type: none;
+    overflow: hidden;
+  }
+  
+.links li{
+    float: right;
+  }
+.links li a{
+    color: #111;
+    display: block;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size:14px;
+  }
+.links li a:hover{
+    text-decoration: underline;
+  }
+.grid{
+    height:23px;
+    position:relative;
+    bottom:4px;
+  }
+.signbutton{
+    background-color: purple;
+    color: #fff;
+    border:none;
+    border-radius: 5px;
+    padding:7px 10px;
+    position:relative;
+    bottom:7px;
+    font-weight:bold;
+    cursor: pointer;
+  }
+.logo{
+    margin-top:200px;
+    margin-bottom:20px;
+    justify-content: center;
+    display: flex;
+    position: relative;
+  }
+.bar{
+    margin:0 auto;
+    width:575px;
+    border-radius:30px;
+    border:1px solid #dcdcdc;
+    box-shadow: 1px 1px 8px 1px #dcdcdc;
+  }
+.bar:focus-within{
+    box-shadow: 1px 1px 8px 1px #dcdcdc;
+    outline:none;
+  }
+.searchbar{
+    height:45px;
+    border:none;
+    font-size:16px;
+    outline: none;
+    padding-inline-end: 30px;
+    padding-inline-start: 2px;
+    margin-inline-end: 37%;
+    width: 15em;
+    position: relative;
+    
+  }
+.voice{
+    height:20px;
+    position:relative;
+    top:5px;
+  }
+.button{
+    margin-top:30px;
+  }
+.button{
+    background-color: #f5f5f5;
+    border:none;
+    color:#707070;
+    font-size:15px;
+    padding: 10px 20px;
+    margin:5px;
+    border-radius:4px;
+    outline:none;
+  }
+.button:hover{
+    border: 1px solid #c8c8c8;
+    padding: 9px 19px;
+    color:#808080;
+  }
+.button:focus{
+    border:1px solid #4885ed;
+    padding: 9px 19px;
+  }
+svg{
+    padding-left: 10px;
+    color: #111;
+    fill: currentColor;
+    width: 24px;
+    height: 24px;
+  }
+
+.name{
+    padding-left: 10px;
+    all: unset;
+    width: 44px;
+    padding-top: 11px;
+    float: left;
+  }
+.animate,
+.languages{
+    padding: 20px;
+    margin: auto;
+    width: 32%;
+    justify-content: center;
+    align-items: center;
+}
+.buttons2 button{
+    margin-top: 10px;
+    background-color: #ccc;
+    border:none;
+    color:#f5f5f5;
+    font-size:15px;
+    padding: 10px 20px;
+    margin:5px;
+    border-radius:4px;
+    outline:none;
+    cursor: pointer;
+}
+.languages ul{
+    list-style: none;
+    text-decoration: none;
+}
+.languages li a{
+    text-decoration: none;
+}
+.buttons2{
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.buttons2 button:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% - 17px);
+    height: calc(100% + 7px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.buttons2 button:active {
+    color: #111
+}
+
+.buttons2 button:active:after {
+    background: transparent;
+}
+
+.buttons2 button:hover:before {
+    opacity: 1;
+}
+
+.buttons2 button:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+footer{
+    background-color: #EFEEEE;
+    border-top: solid 2px #EFEEEE;
+    position: fixed;
+    bottom: 0px;
+    padding: 20px 0px;
+    width: 100%;
+    text-align: end;
+}
+footer a{
+    text-decoration: none;
+    padding-right: 20px;
+}
+footer a .flex{
+    justify-content: space-between;
+}
+footer a:hover{
+    padding: 9px 19px;
+    color:#808080;
+}
+p{
+    font-family: sans-serif;
+    font-weight: 200;
+    margin: 0.4em 0;
+    padding-left: 30%;
+    color: #888;
+    font-size: 2ch;
+  }
+span{
+    color: crimson;
+    font-weight: 600;
+}
